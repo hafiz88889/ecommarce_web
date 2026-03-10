@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Breadcrumb Section -->
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-light p-2 rounded">
+      <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Products</li>
+    </ol>
+  </nav>
+</div>
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/download.png" alt=""
+                    style="height: 60px;width: 100px;"></a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                          <i class="bi bi-cart-check-fill" ></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Main Content -->
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Sidebar -->
+    <div class="col-md-3">
+      <!-- Categories Accordion -->
+      <div class="accordion mb-3" id="categoriesAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCat">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCat" aria-expanded="true" aria-controls="collapseCat">
+              Categories
+            </button>
+          </h2>
+          <div id="collapseCat" class="accordion-collapse collapse show" aria-labelledby="headingCat" data-bs-parent="#categoriesAccordion">
+            <div class="accordion-body">
+              <ul class="list-unstyled">
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand Accordion -->
+      <div class="accordion" id="brandAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingBrand">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrand" aria-expanded="false" aria-controls="collapseBrand">
+              Brands
+            </button>
+          </h2>
+          <div id="collapseBrand" class="accordion-collapse collapse" aria-labelledby="headingBrand" data-bs-parent="#brandAccordion">
+            <div class="accordion-body">
+              <ul class="list-unstyled">
+                <li><a href="#">Brand A</a></li>
+                <li><a href="#">Brand B</a></li>
+                <li><a href="#">Brand C</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="col-md-9">
+      <div class="row g-3">
+        <!-- Example Product Card -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">$49.99</p>
+              <a href="product_details.html" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text">$39.99</p>
+              <a href="product_details.html" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">$59.99</p>
+              <a href="product_details.html" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">$49.99</p>
+              <a href="product_details.html" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text">$39.99</p>
+              <a href="product_details.html" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">$59.99</p>
+              <a href="#" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">$49.99</p>
+              <a href="#" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text">$39.99</p>
+              <a href="#" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="assets/images/images.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">$59.99</p>
+              <a href="#" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+
+      <!-- Pagination -->
+      <nav aria-label="Page navigation example" class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+        <div class="container text-center text-md-start">
+
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">MyShop</h5>
+                    <p>
+                        MyShop is a modern ecommerce website.
+                        We provide best quality products with fast delivery.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+
+                    <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Products</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Cart</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">Customer Service</h5>
+
+                    <p><a href="#" class="text-white text-decoration-none">Help Center</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Return Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Terms</a></p>
+
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <h5 class="text-uppercase fw-bold mb-4">Newsletter</h5>
+
+                    <p>Subscribe for latest updates</p>
+
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p>© 2026 Copyright:
+                    <a href="#" class="text-white text-decoration-none fw-bold">MyShop.com</a>
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+</body>
+</html>

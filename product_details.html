@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .product-image {
+      max-width: 100%;
+      cursor: zoom-in;
+    }
+    .related-card img {
+      object-fit: cover;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Breadcrumb Section -->
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-light p-2 rounded">
+      <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="products.html">Product</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Product <Details></Details></li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Product Main Section -->
+<div class="container my-4">
+  <div class="row g-4">
+    <!-- Left: Image Zoom Section -->
+   <div class="col-md-6">
+  <div class="ratio ratio-1x1 rounded overflow-hidden">
+    <img src="assets/images/images.jpg" class="img-fluid object-fit-cover" alt="Product Image">
+  </div>
+</div>
+    <!-- Right: Product Info -->
+    <div class="col-md-6">
+      <h2>Product Name</h2>
+      <p class="text-muted">$49.99</p>
+      
+      <!-- Quick Overview -->
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nobis quo minima atque itaque dolor debitis modi laborum eius quod, recusandae culpa excepturi laboriosam veritatis corporis nulla? Vitae, ea nisi..</p>
+
+      <!-- Quantity Selector -->
+      <div class="d-flex align-items-center mb-3">
+        <label for="quantity" class="me-2">Quantity:</label>
+        <input type="number" id="quantity" class="form-control w-25" value="1" min="1">
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-flex gap-2">
+        <button class="btn btn-primary">Add to Cart</button>
+        <button class="btn btn-success">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Section -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h4>Product Details</h4>
+      <p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus itaque cupiditate laudantium, architecto, libero blanditiis accusamus obcaecati veritatis temporibus doloribus minima iusto dolores minus! Libero, quam sapiente facilis officiis, nulla vero ab incidunt tempore, dolorem atque id. Doloremque, autem libero accusamus, laudantium quaerat pariatur mollitia facilis illo modi eos minus!
+      </p>
+    </div>
+  </div>
+
+  <!-- Related Products Section -->
+  <div class="row mt-5">
+    <h4 class="mb-3">Related Products</h4>
+    <!-- Product Card -->
+    <div class="col-md-3">
+      <div class="card related-card h-100">
+        <img src="assets/images/OIP (2).webp" class="card-img-top" alt="Related Product">
+        <div class="card-body">
+          <h6 class="card-title">Product A</h6>
+          <p class="card-text">$29.99</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card related-card h-100">
+        <img src="assets/images/OIP (2).webp" class="card-img-top" alt="Related Product">
+        <div class="card-body">
+          <h6 class="card-title">Product B</h6>
+          <p class="card-text">$39.99</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card related-card h-100">
+        <img src="assets/images/OIP (2).webp" class="card-img-top" alt="Related Product">
+        <div class="card-body">
+          <h6 class="card-title">Product C</h6>
+          <p class="card-text">$59.99</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card related-card h-100">
+        <img src="assets/images/OIP (2).webp" class="card-img-top" alt="Related Product">
+        <div class="card-body">
+          <h6 class="card-title">Product D</h6>
+          <p class="card-text">$19.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+        <div class="container text-center text-md-start">
+
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">MyShop</h5>
+                    <p>
+                        MyShop is a modern ecommerce website.
+                        We provide best quality products with fast delivery.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+
+                    <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Products</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Cart</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">Customer Service</h5>
+
+                    <p><a href="#" class="text-white text-decoration-none">Help Center</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Return Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Terms</a></p>
+
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <h5 class="text-uppercase fw-bold mb-4">Newsletter</h5>
+
+                    <p>Subscribe for latest updates</p>
+
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p>© 2026 Copyright:
+                    <a href="#" class="text-white text-decoration-none fw-bold">MyShop.com</a>
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+</body>
+</html>
